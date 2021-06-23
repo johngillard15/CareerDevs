@@ -3,6 +3,12 @@ package com.company;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Felicia's Fruit Stand 3.0
+ * @author John Gillard
+ * 6/20/2021
+ */
+
 public class Main {
 
     public static void displayProducts(List<Product> products){

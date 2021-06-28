@@ -55,6 +55,7 @@ public class Main {
     public static void main(String[] args) {
         List<Animal> animalList = new ArrayList<>();
 
+        // Instantiate animals
         Animal defaultAnimal = new Animal(1, 1, true, "Default Animal", "Default");
         Dog fido = new Dog(4, 2, true, "Fido", "Light Brown", "Golden Retriever", 3, false, 2);
         Cat kitty = new Cat(4, 2, true, "Kitty", "White", "Black Spots", false);

@@ -27,7 +27,12 @@ public class Cat extends Animal{
     @Override
     public String toString() {
         return "Cat{" +
-                "pattern='" + pattern + '\'' +
+                "legs=" + legs +
+                ", size=" + size +
+                ", isFixed=" + isFixed +
+                ", name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", pattern='" + pattern + '\'' +
                 ", wasStray=" + wasStray +
                 ", clawsFurniture=" + clawsFurniture +
                 '}';

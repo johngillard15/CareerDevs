@@ -55,26 +55,19 @@ public class Main {
     public static void main(String[] args) {
         List<Animal> animalList = new ArrayList<>();
 
-        // Instantiate animals
-        Animal frog = new Animal(4, 1, false, "Frog", "Green");
-        Dog fido = new Dog(4, 2, true, "Fido", "Light Brown", "Golden Retriever", 3, false, "Yip!");
-        Cat kitty = new Cat(4, 2, true, "Kitty", "White", "Black Spots", false);
-        Dog rufus = new Dog(4, 4, false, "Rufus", "Grey", "Tamaskan", 4, true, "Awoooooooo!");
-        Cat maxwell = new Cat(4, 3, false, "Maxwell", "Brown", "Black Stripes", true, true);
-
         // Add animals to list
-        DayCare.addAnimal(animalList, frog);
-        DayCare.addAnimal(animalList, fido);
-        DayCare.addAnimal(animalList, kitty);
-        DayCare.addAnimal(animalList, rufus);
-        DayCare.addAnimal(animalList, maxwell);
+        DayCare.addAnimal(animalList, new Animal(4, 1, false, "Frog", "Green"));
+        DayCare.addAnimal(animalList, new Dog(4, 2, true, "Fido", "Light Brown", "Golden Retriever", 3, false, "Yip!"));
+        DayCare.addAnimal(animalList, new Cat(4, 2, true, "Kitty", "White", "Black Spots", false));
+        DayCare.addAnimal(animalList, new Dog(4, 4, false, "Rufus", "Grey", "Tamaskan", 4, true, "Awoooooooo!"));
+        DayCare.addAnimal(animalList, new Cat(4, 3, false, "Maxwell", "Brown", "Black Stripes", true, true));
 
         // Display all animals in list
         DayCare.displayAnimals(animalList);
 
         // Remove an animal and display updated list
-        System.out.printf("\nRemove \"%s\"\n", frog.name);
-        DayCare.removeAnimal(animalList, frog.name);
+        System.out.printf("\nRemove \"%s\"\n", animalList.get(0).name);
+        DayCare.removeAnimal(animalList, animalList.get(0).name);
         DayCare.displayAnimals(animalList);
 
         // Let the animals loose!

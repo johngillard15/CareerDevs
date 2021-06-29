@@ -34,10 +34,15 @@ public class Dog extends Animal{
     @Override
     public String toString() {
         return "Dog{" +
-                "breed='" + breed + '\'' +
+                "legs=" + legs +
+                ", size=" + size +
+                ", isFixed=" + isFixed +
+                ", name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", breed='" + breed + '\'' +
                 ", snoutLength=" + snoutLength +
                 ", isHouseTrained=" + isHouseTrained +
-                ", noise=" + noise +
+                ", noise='" + noise + '\'' +
                 '}';
     }
 }

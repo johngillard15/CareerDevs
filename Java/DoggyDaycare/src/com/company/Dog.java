@@ -4,7 +4,7 @@ public class Dog extends Animal{
     public String breed;
     public int snoutLength;
     public boolean houseTrained;
-    public int noise;
+    public String noise;
 
     public Dog(int legs, int size, boolean isFixed, String name, String coat, String breed, int snoutLength,
                boolean houseTrained){
@@ -15,7 +15,7 @@ public class Dog extends Animal{
     }
 
     public Dog(int legs, int size, boolean isFixed, String name, String coat, String breed, int snoutLength,
-               boolean houseTrained, int noise){
+               boolean houseTrained, String noise){
         super(legs, size, isFixed, name, coat);
         this.breed = breed;
         this.snoutLength = snoutLength;
@@ -25,8 +25,8 @@ public class Dog extends Animal{
 
     @Override
     public void speak(){
-        if(this.noise > 4)
-            System.out.println("Awooooooooooo!");
+        if(!noise.equals(""))
+            System.out.println(noise);
         else
             System.out.println("Woof!");
     }

@@ -57,9 +57,9 @@ public class Main {
 
         // Instantiate animals
         Animal defaultAnimal = new Animal(1, 1, true, "Default Animal", "Default");
-        Dog fido = new Dog(4, 2, true, "Fido", "Light Brown", "Golden Retriever", 3, false, 2);
+        Dog fido = new Dog(4, 2, true, "Fido", "Light Brown", "Golden Retriever", 3, false, "Yip!");
         Cat kitty = new Cat(4, 2, true, "Kitty", "White", "Black Spots", false);
-        Dog rufus = new Dog(4, 4, true, "Rufus", "Grey", "Tamaskan", 4, true, 5);
+        Dog rufus = new Dog(4, 4, true, "Rufus", "Grey", "Tamaskan", 4, true, "Awoooooooo!");
         Cat maxwell = new Cat(4, 3, true, "Maxwell", "Brown", "Black Stripes", true, true);
 
         // Add animals to list

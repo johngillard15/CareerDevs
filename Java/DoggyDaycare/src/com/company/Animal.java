@@ -5,14 +5,14 @@ public class Animal {
     public int size;
     public boolean isFixed;
     public String name;
-    public String coat;
+    public String color;
 
-    public Animal(int legs, int size, boolean isFixed, String name, String coat){
+    public Animal(int legs, int size, boolean isFixed, String name, String color){
         this.legs = legs;
         this.size = size;
         this.isFixed = isFixed;
         this.name = name;
-        this.coat = coat;
+        this.color = color;
     }
 
     public void speak(){
@@ -26,7 +26,7 @@ public class Animal {
                 ", size=" + size +
                 ", isFixed=" + isFixed +
                 ", name='" + name + '\'' +
-                ", coat='" + coat + '\'' +
+                ", color='" + color + '\'' +
                 '}';
     }
 }

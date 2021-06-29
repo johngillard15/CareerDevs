@@ -3,23 +3,23 @@ package com.company;
 public class Dog extends Animal{
     public String breed;
     public int snoutLength;
-    public boolean houseTrained;
+    public boolean isHouseTrained;
     public String noise;
 
     public Dog(int legs, int size, boolean isFixed, String name, String coat, String breed, int snoutLength,
-               boolean houseTrained){
+               boolean isHouseTrained){
         super(legs, size, isFixed, name, coat);
         this.breed = breed;
         this.snoutLength = snoutLength;
-        this.houseTrained = houseTrained;
+        this.isHouseTrained = isHouseTrained;
     }
 
     public Dog(int legs, int size, boolean isFixed, String name, String coat, String breed, int snoutLength,
-               boolean houseTrained, String noise){
+               boolean isHouseTrained, String noise){
         super(legs, size, isFixed, name, coat);
         this.breed = breed;
         this.snoutLength = snoutLength;
-        this.houseTrained = houseTrained;
+        this.isHouseTrained = isHouseTrained;
         this.noise = noise;
     }
 
@@ -36,7 +36,7 @@ public class Dog extends Animal{
         return "Dog{" +
                 "breed='" + breed + '\'' +
                 ", snoutLength=" + snoutLength +
-                ", houseTrained=" + houseTrained +
+                ", isHouseTrained=" + isHouseTrained +
                 ", noise=" + noise +
                 '}';
     }

@@ -56,14 +56,14 @@ public class Main {
         List<Animal> animalList = new ArrayList<>();
 
         // Instantiate animals
-        Animal defaultAnimal = new Animal(1, 1, true, "Default Animal", "Default");
+        Animal frog = new Animal(4, 1, false, "Frog", "Green");
         Dog fido = new Dog(4, 2, true, "Fido", "Light Brown", "Golden Retriever", 3, false, "Yip!");
         Cat kitty = new Cat(4, 2, true, "Kitty", "White", "Black Spots", false);
-        Dog rufus = new Dog(4, 4, true, "Rufus", "Grey", "Tamaskan", 4, true, "Awoooooooo!");
-        Cat maxwell = new Cat(4, 3, true, "Maxwell", "Brown", "Black Stripes", true, true);
+        Dog rufus = new Dog(4, 4, false, "Rufus", "Grey", "Tamaskan", 4, true, "Awoooooooo!");
+        Cat maxwell = new Cat(4, 3, false, "Maxwell", "Brown", "Black Stripes", true, true);
 
         // Add animals to list
-        DayCare.addAnimal(animalList, defaultAnimal);
+        DayCare.addAnimal(animalList, frog);
         DayCare.addAnimal(animalList, fido);
         DayCare.addAnimal(animalList, kitty);
         DayCare.addAnimal(animalList, rufus);
@@ -73,8 +73,8 @@ public class Main {
         DayCare.displayAnimals(animalList);
 
         // Remove an animal and display updated list
-        System.out.printf("\nRemove \"%s\"\n", defaultAnimal.name);
-        DayCare.removeAnimal(animalList, defaultAnimal.name);
+        System.out.printf("\nRemove \"%s\"\n", frog.name);
+        DayCare.removeAnimal(animalList, frog.name);
         DayCare.displayAnimals(animalList);
 
         // Let the animals loose!

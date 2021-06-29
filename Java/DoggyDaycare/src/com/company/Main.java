@@ -73,8 +73,8 @@ public class Main {
         DayCare.displayAnimals(animalList);
 
         // Remove an animal and display updated list
-        System.out.println("\nRemove \"Default Animal\"");
-        DayCare.removeAnimal(animalList, "Default Animal");
+        System.out.printf("\nRemove \"%s\"\n", defaultAnimal.name);
+        DayCare.removeAnimal(animalList, defaultAnimal.name);
         DayCare.displayAnimals(animalList);
 
         // Let the animals loose!

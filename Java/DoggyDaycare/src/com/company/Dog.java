@@ -4,7 +4,7 @@ public class Dog extends Animal{
     public String breed;
     public int snoutLength;
     public boolean isHouseTrained;
-    public String noise;
+    public String noise = "Woof!";
 
     public Dog(int legs, int size, boolean isFixed, String name, String coat, String breed, int snoutLength,
                boolean isHouseTrained){
@@ -25,10 +25,7 @@ public class Dog extends Animal{
 
     @Override
     public void speak(){
-        if(!noise.equals(""))
-            System.out.println(noise);
-        else
-            System.out.println("Woof!");
+        System.out.println(noise);
     }
 
     @Override

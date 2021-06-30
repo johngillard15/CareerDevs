@@ -62,7 +62,7 @@ public class Main {
         // Display all animals in list
         doggyDayCare.displayAnimals();
 
-        // Remove an animal and display updated list
+        // Remove first animal and display updated list
         System.out.printf("\nRemove \"%s\"\n", doggyDayCare.animals.get(0).name);
         doggyDayCare.removeAnimal(doggyDayCare.animals.get(0).name);
         doggyDayCare.displayAnimals();

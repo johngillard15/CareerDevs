@@ -1,18 +1,21 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class DayCare {
-    public static void addAnimal(List<Animal> animalList, Animal newAnimal){
-        animalList.add(newAnimal);
+    List<Animal> animals = new ArrayList<>();
+
+    public void addAnimal(Animal newAnimal){
+        animals.add(newAnimal);
     }
 
-    public static void displayAnimals(List<Animal> animalList){
-        for(Animal animal : animalList)
+    public void displayAnimals(){
+        for(Animal animal : animals)
             System.out.println(animal);
     }
 
-    public static void removeAnimal(List<Animal> animalList, String name){
-        animalList.removeIf(animal -> animal.name.equals(name));
+    public void removeAnimal(String name){
+        animals.removeIf(animal -> animal.name.equals(name));
     }
 }

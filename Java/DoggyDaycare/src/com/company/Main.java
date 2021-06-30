@@ -72,9 +72,7 @@ public class Main {
 
         // Let the animals loose!
         System.out.println("\nSpeak!");
-        fido.speak();
-        kitty.speak();
-        rufus.speak();
-        maxwell.speak();
+        for(Animal animal : animalList)
+            animal.speak();
     }
 }

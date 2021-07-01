@@ -10,7 +10,7 @@ package com.company;
  * <li>a collection of Shots. These will have a Flavor a volume and amount to dispense per shot.</li>
  * <li>Three different CupHolders with sizes 'small' 'medium' large' (you can decide what those numbers are)</li></p>
  * <br>
- * <p>CupHolder details:</p>
+ * <h3>CupHolder details:</h3>
  * <p>The CupHolder class will have</p>
  * <li>Volume per cup</li>
  * <li>Quantity</li>
@@ -21,7 +21,7 @@ package com.company;
  * <li>make the volume a private final field that can't be modified or accessed outside of the dispenseCup method.</li>
  * <li>make the quantity field a private field so it can only be modified through the two methods.</li>
  * <br>
- * <p>Shots Details</p>
+ * <h3>Shots Details</h3>
  * <p>the shots class will have:</p>
  * <li>a flavor name</li>
  * <li>current amount of liquid</li>
@@ -31,7 +31,8 @@ package com.company;
  * <li>Extra Challenges:</li>
  * <li>make the fields all private.</li>
  * <li>update the dispense method to see if there is enough liquid to dispense and if not return null instead of the flavor.</li>
- * <p>Syrup details</p>
+ * <br>
+ * <h3>Syrup details</h3>
  * <li>drink name</li>
  * <li>amount of liquid</li>
  * <li>a dispense(amt) method that deducts the amount of liquid requested</li>
@@ -39,7 +40,7 @@ package com.company;
  * <li>Extra Challenges:</li>
  * <li>make fields Private</li>
  * <br>
- * <p>DrinkDispenser Methods:</p>
+ * <h3>DrinkDispenser Methods:</h3>
  * <li>ServeDrink(size, syrupIndex) will get a cup of the size requested and dispense the syrup requested. Will display "{Size} {Drink}" ex: "Medium Coke"</li>
  * <li>ServeDrink(size, syrupIndex, shotIndex, shotCount) will get a cup of size requested add shotcount of shotIndex shot and dispense the syrup requested will display "{Size} {Shot} {Drink}" ex "Large Cherry Sprite"</li>
  * <li>lowSyrups(vol) will scan the syrups and return the indexes of any syrups that have less then vol liquid remaining</li>

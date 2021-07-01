@@ -1,9 +1,14 @@
+import com.company.Syrups;
+import com.company.Shots;
+import com.company.CupHolder;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class DrinkDispenser {
     private List<Syrups> syrups = new ArrayList<>();
     private List<Shots> shots = new ArrayList<>();
+    private List<CupHolder> cups = new ArrayList<>();
 
     public void serveDrink(String size, int syrupIndex){
         //System.out.printf("", );
@@ -21,19 +26,19 @@ public class DrinkDispenser {
         return 1;
     }
 
-    public void addSyrup(String syrup){
+    public void addSyrup(Syrups syrup){
+        syrups.add(syrup);
+    }
+
+    public void addShot(Shots shot){
+        shots.add(shot);
+    }
+
+    public void replaceSyrup(int index, String newSyrup){
 
     }
 
-    public void addShot(String shot){
-
-    }
-
-    public void replaceSyrup(int index, String syrup){
-
-    }
-
-    public void replaceShot(int index, String shot){
+    public void replaceShot(int index, String newShot){
 
     }
 }

@@ -1,8 +1,28 @@
 package com.company;
 
 public class CupHolder {
-    private double volume;
+    private final int volume;
     private int quantity;
+
+    public CupHolder(String size){
+        switch(size){
+            case "small":
+                this.volume = 8;
+                break;
+
+            case "medium":
+                this.volume = 16;
+                break;
+
+            case "large":
+                this.volume = 24;
+                break;
+
+            default:
+                this.volume = 4;
+                break;
+        }
+    }
 
     public double dispenseCup(){
         this.quantity--;

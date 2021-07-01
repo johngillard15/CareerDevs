@@ -1,16 +1,22 @@
 package com.company;
 
 public class Shots {
-    private String flavor;
-    private double shotAmt;
-    private double shot;
+    private final String flavor;
+    private int shotAmt;
+    private final int shotSize;
+
+    public Shots(String flavor, int shotAmt, int shotSize){
+        this.flavor = flavor;
+        this.shotAmt = shotAmt;
+        this.shotSize = shotSize;
+    }
 
     public String dispense(){
-        this.shotAmt -= shot;
+        this.shotAmt -= shotSize;
         return this.flavor;
     }
 
     public int getVolume(){
-        return (int)(this.shotAmt / this.shot);
+        return (this.shotAmt / this.shotSize);
     }
 }

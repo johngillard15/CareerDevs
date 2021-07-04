@@ -10,8 +10,13 @@ public class DrinkDispenser {
     private List<Shots> shots = new ArrayList<>();
     private List<CupHolder> cups = new ArrayList<>();
 
+    public DrinkDispenser(){
+
+    }
+
     public void serveDrink(String size, int syrupIndex){
-        //System.out.printf("", );
+        //String drink = syrups.get(syrupIndex).dispense();
+        System.out.printf("%s %s\n", size, drink);
     }
 
     public void serveDrink(String size, int syrupIndex, int shotIndex, int shotCount){
@@ -26,12 +31,16 @@ public class DrinkDispenser {
         return 1;
     }
 
-    public void addSyrup(Syrups syrup){
-        syrups.add(syrup);
+    public void addSyrup(Syrups newSyrup){
+        syrups.add(newSyrup);
     }
 
-    public void addShot(Shots shot){
-        shots.add(shot);
+    public void addSyrup(Syrups name, int vol){
+        syrups.add(new Syrups(name, vol));
+    }
+
+    public void addShot(Shots newShot){
+        shots.add(newShot);
     }
 
     public void replaceSyrup(int index, String newSyrup){

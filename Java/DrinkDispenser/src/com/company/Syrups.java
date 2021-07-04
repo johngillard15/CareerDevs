@@ -2,18 +2,18 @@ package com.company;
 
 public class Syrups {
     private String drinkName;
-    private int syrupAmt;
+    private int volume;
 
-    public Syrups(String drinkName, int syrupAmt){
+    public Syrups(String drinkName, int volume){
         this.drinkName = drinkName;
-        this.syrupAmt = syrupAmt;
+        this.volume = volume;
     }
 
-    public void dispense(int amt){
-        this.syrupAmt -= amt;
+    public void dispense(int amount){
+        this.volume -= amount;
     }
 
     public double getVolume(){
-        return this.syrupAmt;
+        return this.volume;
     }
 }

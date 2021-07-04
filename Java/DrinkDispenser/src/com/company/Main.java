@@ -59,6 +59,12 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        // write your code here
+        DrinkDispenser dispenser = new DrinkDispenser();
+
+        dispenser.addSyrup(new Syrup("Purple Drank", 1000));
+        dispenser.addSyrup("Blue Drank", 600);
+        dispenser.addSyrup(new Syrup("Orange", 750));
+
+        dispenser.serveDrink("medium", 3);
     }
 }

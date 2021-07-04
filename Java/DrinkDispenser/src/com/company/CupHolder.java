@@ -24,7 +24,7 @@ public class CupHolder {
         }
     }
 
-    public double dispenseCup(){
+    public int dispenseCup(){
         this.quantity--;
         return this.volume;
     }

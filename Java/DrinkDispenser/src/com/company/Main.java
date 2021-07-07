@@ -39,7 +39,7 @@ package com.company;
  * <li>a getVolume method that will return the amount of liquid remaining</li>
  * <li>Extra Challenges:</li>
  * <li>make fields Private</li>
- * <br>
+ * <br> 
  * <h3>DrinkDispenser Methods:</h3>
  * <li>ServeDrink(size, syrupIndex) will get a cup of the size requested and dispense the syrup requested. Will display "{Size} {Drink}" ex: "Medium Coke"</li>
  * <li>ServeDrink(size, syrupIndex, shotIndex, shotCount) will get a cup of size requested add shotcount of shotIndex shot and dispense the syrup requested will display "{Size} {Shot} {Drink}" ex "Large Cherry Sprite"</li>

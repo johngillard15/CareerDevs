@@ -1,4 +1,10 @@
 package com.company;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.company.DrinkDispenser;
+import com.company.CupHolder;
+import com.company.Syrup;
 
 /**
  * <h1>DrinkDispenser</h1>
@@ -66,20 +72,21 @@ public class Main {
         dispenser.addSyrup(new Syrup("Orange", 750));
 
         dispenser.serveDrink("medium", 3);*/
+
         DrinkDispenser dispenser = new DrinkDispenser(8, 12, 16);
 
         dispenser.small.refill(20);
         dispenser.medium.refill(15);
         dispenser.large.refill(12);
 
-        dispenser.addSyrup(new Syrup("Purple Drink", 1000));
+        dispenser.addSyrup(new Syrup("Purple Drank", 1000));
         dispenser.addSyrup("Blue Drink", 600);
         dispenser.addSyrup(new Syrup("Orange", 750));
-        dispenser.addSyrup("Dr. Cliff", 112);
+        dispenser.addSyrup("Purple Drank", 112);
 
-        System.out.printf("m cups: %d\tdrink 3 vol: %d\n", dispenser.medium.qty, cliffsDispenser.syrups.get(3).getVol());
+        System.out.printf("m cups: %d\tdrink 3 vol: %d\n", dispenser.medium.qty, dispenser.syrups.get(3).getVolume());
         dispenser.serveDrink("M", 3);
-        System.out.printf("m cups: %d\tdrink 3 vol: %d\n", dispenser.medium.qty, cliffsDispenser.syrups.get(3).getVol());
+        System.out.printf("m cups: %d\tdrink 3 vol: %d\n", dispenser.medium.qty, dispenser.syrups.get(3).getVolume());
         System.out.println(dispenser.lowSyrups(100));
         dispenser.serveDrink("L", 3);
         System.out.println(dispenser.lowSyrups(100));

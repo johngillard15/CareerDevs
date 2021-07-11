@@ -6,9 +6,9 @@ import java.util.List;
 
 public class DrinkDispenser {
     public List<Syrup> syrups = new ArrayList<>();;
-    public CupHolder small = new CupHolder(8);
-    public CupHolder medium = new CupHolder(10);
-    public CupHolder large = new CupHolder(12);
+    public CupHolder small;
+    public CupHolder medium;
+    public CupHolder large;
 
     public DrinkDispenser(int smallVol, int mediumVol, int largeVol){
         small = new CupHolder(smallVol);
@@ -21,7 +21,7 @@ public class DrinkDispenser {
         System.out.printf("%s %s\n", size, drink);
     }*/
 
-    public void serveDrink(String size, int syrupI) {
+    public void serveDrink(String size, int syrupI){
         int vol;
         switch (size) {
             case "S":
@@ -45,12 +45,12 @@ public class DrinkDispenser {
         // System.out.println(size + " " + drink);
     }
 
-    public List<String> lowSyrups(int lowValue) {
+    public List<String> lowSyrups(int lowValue){
         List<String> output = new ArrayList<>();
 
-        for (int i = 0; i < syrups.size(); i++) {
-            if (syrups.get(i).getVol() <= lowValue) {
-                output.add(i + ": " + syrups.get(i).name);
+        for (int i = 0; i < syrups.size(); i++){
+            if (syrups.get(i).getVolume() <= lowValue) {
+                output.add(i + ": " + syrups.get(i).drinkName);
             }
         }
 
@@ -61,11 +61,11 @@ public class DrinkDispenser {
         return 1;
     }
 
-    public void addSyrup(Syrup newSyrup) {
+    public void addSyrup(Syrup newSyrup){
         syrups.add(newSyrup);
     }
 
-    public void addSyrup(String name, int vol) {
+    public void addSyrup(String name, int vol){
         syrups.add(new Syrup(name, vol));
     }
 

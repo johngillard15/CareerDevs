@@ -39,7 +39,7 @@ package com.company;
  * <li>a getVolume method that will return the amount of liquid remaining</li>
  * <li>Extra Challenges:</li>
  * <li>make fields Private</li>
- * <br> 
+ * <br>
  * <h3>DrinkDispenser Methods:</h3>
  * <li>ServeDrink(size, syrupIndex) will get a cup of the size requested and dispense the syrup requested. Will display "{Size} {Drink}" ex: "Medium Coke"</li>
  * <li>ServeDrink(size, syrupIndex, shotIndex, shotCount) will get a cup of size requested add shotcount of shotIndex shot and dispense the syrup requested will display "{Size} {Shot} {Drink}" ex "Large Cherry Sprite"</li>
@@ -59,12 +59,29 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        DrinkDispenser dispenser = new DrinkDispenser();
+        /*DrinkDispenser dispenser = new DrinkDispenser();
 
         dispenser.addSyrup(new Syrup("Purple Drank", 1000));
         dispenser.addSyrup("Blue Drank", 600);
         dispenser.addSyrup(new Syrup("Orange", 750));
 
-        dispenser.serveDrink("medium", 3);
+        dispenser.serveDrink("medium", 3);*/
+        DrinkDispenser dispenser = new DrinkDispenser(8, 12, 16);
+
+        dispenser.small.refill(20);
+        dispenser.medium.refill(15);
+        dispenser.large.refill(12);
+
+        dispenser.addSyrup(new Syrup("Purple Drink", 1000));
+        dispenser.addSyrup("Blue Drink", 600);
+        dispenser.addSyrup(new Syrup("Orange", 750));
+        dispenser.addSyrup("Dr. Cliff", 112);
+
+        System.out.printf("m cups: %d\tdrink 3 vol: %d\n", dispenser.medium.qty, cliffsDispenser.syrups.get(3).getVol());
+        dispenser.serveDrink("M", 3);
+        System.out.printf("m cups: %d\tdrink 3 vol: %d\n", dispenser.medium.qty, cliffsDispenser.syrups.get(3).getVol());
+        System.out.println(dispenser.lowSyrups(100));
+        dispenser.serveDrink("L", 3);
+        System.out.println(dispenser.lowSyrups(100));
     }
 }

@@ -1,35 +1,19 @@
 package com.company;
 
 public class CupHolder {
-    private final int volume;
-    private int quantity;
+    public final int volume;
+    public int quantity = 0;
 
-    public CupHolder(String size){
-        switch(size){
-            case "small":
-                this.volume = 8;
-                break;
-
-            case "medium":
-                this.volume = 16;
-                break;
-
-            case "large":
-                this.volume = 24;
-                break;
-
-            default:
-                this.volume = 4;
-                break;
-        }
+    public CupHolder(int volume){
+        this.volume = volume;
     }
 
     public int dispenseCup(){
-        this.quantity--;
+        quantity--;
         return this.volume;
     }
 
     public void refill(int amt){
-        this.quantity += amt;
+        quantity += amt;
     }
 }
